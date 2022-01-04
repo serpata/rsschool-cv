@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
 body {
   height: 100%;
   display: flex;
@@ -14,12 +19,27 @@ header {
   height: 40px;
   display: flex;
   justify-content: center;
+  padding: 5px 0;
+}
+
+header nav {
+  height: 100%;
 }
 
 header ul {
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  height: 100%;
   display: flex;
   gap: 30px;
   list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
 }
 
 main {
@@ -37,4 +57,21 @@ footer {
   height: 40px;
   display: flex;
   justify-content: center;
+  padding: 5px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
 }
